@@ -20,10 +20,8 @@
 
 VAR time = 0// 0 Morning, 1 Noon, 2 Evening, 3 Night
 VAR stamina = 6 //player starts
-VAR flashlight = false 
 VAR key = false 
 VAR knife = false 
-VAR healing_kit = false
 VAR crowbar = false 
 VAR health = 10
 VAR journal = false 
