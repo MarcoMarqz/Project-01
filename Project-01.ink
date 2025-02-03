@@ -258,7 +258,7 @@ What will you use ?
  ->DONE
  == prepare == 
  
- Reflect on what you have before you enter the fight 
+ You are reflecting what you have before you enter the fight .
  [-----STATS-----]
 
  health: {health}
