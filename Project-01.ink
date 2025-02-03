@@ -107,7 +107,6 @@ You search your home for anything useful. But all your belongings seem to be mis
 == kitchen == 
 You find an old flashlight. It might be useful.
 You also find some canned food.
-~flashlight = true 
 ~ food = food + 2
 
 *[Go back] -> check_house
