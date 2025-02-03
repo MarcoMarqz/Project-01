@@ -105,8 +105,7 @@ You search your home for anything useful. But all your belongings seem to be mis
 -> DONE
 
 == kitchen == 
-You find an old flashlight. It might be useful.
-You also find some canned food.
+You only find some canned food. You take the food.
 ~ food = food + 2
 
 *[Go back] -> check_house
@@ -164,10 +163,11 @@ You notice it has something in its pocket.
 ->DONE
 
 == loot == 
-{not visitfight:You make your way back to the defeated zombie |You find a rusted key. You take it.}
+You are where the zombie body lays
+found key on zombie. key obtained.
 ~ key = true
 
-{check_stamina()}
+
 +{stamina > 0} [Continue exploring] -> ruins
 +[Return home] -> homebase
 
@@ -191,11 +191,11 @@ You crouch in the shadows. The figure limps past you, unaware of your presence.
 You are now in an abandoned market. Supplies might be inside.//check for if entered 
 It's {advance_time()}
 {check_stamina()}
-*[Search for food] -> food1
-*[Search for weapons] -> weapons
-+[Investigate the backroom] -> backroom
+*{stamina > 0}[Search for food] -> food1
+*{stamina > 0}[Search for weapons] -> weapons
++{stamina > 0}[Investigate the backroom] -> backroom
 +[Return home] -> homebase
-*[Go to the coordinates] -> coordinates
+*{stamina > 0}[Go to the coordinates] -> coordinates
 ->DONE
 
 == food1 == 
